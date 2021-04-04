@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <div className={styles.banner />
+        <div className={styles.banner} />
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
