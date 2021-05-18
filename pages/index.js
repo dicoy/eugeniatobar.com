@@ -27,7 +27,7 @@ export default function Home() {
 <header class="near-black dt vh-100 w-100 bg-light-gray cover" style="background: url('/tachyons-consultant/img/bg.png') no-repeat center">
   <div class="dtc v-mid tc w-100">
     <h1 class="f1 lh-solid mw8 center tc b mt6 ph5-ns">Consultant - Showcase your consulting agency/company!</h1>
-    <hr class="mw4 center bn bg-blue" style="height: 5px">
+    <hr class="mw4 center bn bg-blue" style="height: 5px" />
 
     <p class="f3 mw8 center tc ph5">Tachyons Templates is a great way to get started building websites using the tachyons css framework. Simply download and launch your site within minutes.</p>
     <a href="#about" class="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-blue ba b--blue near-white page-scroll">Learn More</a>
@@ -37,7 +37,7 @@ export default function Home() {
 <section id="about" class="vh-75 dt bg-blue near-white w-100">
   <div class="dtc v-mid center measure tc">
     <h2 class="f2 f1-ns">Learn what all the fuzz is about!</h2>
-    <hr class="mw4 center bn bg-near-white" style="height: 5px">
+    <hr class="mw4 center bn bg-near-white" style="height: 5px" />
     <p class="f4 mw7 center">Tachyons Templates has everything you need to get started showing off your company. Simply copy this page, update the links and contact information, then start showing off.</p>
     <a href="#services" class="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-near-white ba b--near-white blue page-scroll">See Our Services</a>
   </div>
@@ -46,7 +46,7 @@ export default function Home() {
 <section id="services" class="mv3 pa0">
   <div class="tc mv4 pa0">
     <h2 class="f3 f1-ns">View our Services</h2>
-    <hr class="mw4 center bn bg-blue" style="height: 5px">
+    <hr class="mw4 center bn bg-blue" style="height: 5px" />
 
   </div>
   <div class="cf w-100 w-80-ns center">
@@ -189,7 +189,7 @@ export default function Home() {
 <section id="contact" class="vh-75 w-100 dt contact bg-near-white">
   <div class="dtc v-mid">
     <h2 class="tc near-black f1">Lets get in Touch!</h2>
-    <hr class="mw4 center bn bg-blue" style="height: 5px">
+    <hr class="mw4 center bn bg-blue" style="height: 5px" />
 
     <p class="mw7 center b near-black lh-copy f5 tc">
       Contact a teammate to boost your sales and fire up your next project.
