@@ -37,7 +37,7 @@ export default function Home() {
       </div>
     </header>
     <header className="near-black dt vh-100 w-100 mt bg-light-gray cover logo bg-center">
-      <div className="dtc v-mid tc w-100">
+      <div className="dtc pt7 tc w-100">
         <p className="f3 mw8 center tc ph5">Tachyons Templates is a great way to get started building websites using the tachyons css framework. Simply download and launch your site within minutes.</p>
         <a href="#about" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-hot-pink ba b--hot-pink near-white page-scroll">Learn More</a>
       </div>
