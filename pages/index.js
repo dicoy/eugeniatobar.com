@@ -30,10 +30,10 @@ export default function Home() {
   </div>
 </header>
 
-<header className="near-black dt vh-100 w-100 bg-light-gray cover" style="background: url('/tachyons-consultant/img/bg.png') no-repeat center">
+<header className="near-black dt vh-100 w-100 bg-light-gray cover" style={{background: "url('/tachyons-consultant/img/bg.png') no-repeat center"}}>
   <div className="dtc v-mid tc w-100">
     <h1 className="f1 lh-solid mw8 center tc b mt6 ph5-ns">Consultant - Showcase your consulting agency/company!</h1>
-    <hr className="mw4 center bn bg-blue" style="height: 5px" />
+    <hr className="mw4 center bn bg-blue" style={{height: '5px'}} />
 
     <p className="f3 mw8 center tc ph5">Tachyons Templates is a great way to get started building websites using the tachyons css framework. Simply download and launch your site within minutes.</p>
     <a href="#about" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-blue ba b--blue near-white page-scroll">Learn More</a>
@@ -43,7 +43,7 @@ export default function Home() {
 <section id="about" className="vh-75 dt bg-blue near-white w-100">
   <div className="dtc v-mid center measure tc">
     <h2 className="f2 f1-ns">Learn what all the fuzz is about!</h2>
-    <hr className="mw4 center bn bg-near-white" style="height: 5px" />
+    <hr className="mw4 center bn bg-near-white" style={{height: '5px'}} />
     <p className="f4 mw7 center">Tachyons Templates has everything you need to get started showing off your company. Simply copy this page, update the links and contact information, then start showing off.</p>
     <a href="#services" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-near-white ba b--near-white blue page-scroll">See Our Services</a>
   </div>
@@ -52,7 +52,7 @@ export default function Home() {
 <section id="services" className="mv3 pa0">
   <div className="tc mv4 pa0">
     <h2 className="f3 f1-ns">View our Services</h2>
-    <hr className="mw4 center bn bg-blue" style="height: 5px" />
+    <hr className="mw4 center bn bg-blue" style={{height: '5px'}} />
 
   </div>
   <div className="cf w-100 w-80-ns center">
@@ -195,7 +195,7 @@ export default function Home() {
 <section id="contact" className="vh-75 w-100 dt contact bg-near-white">
   <div className="dtc v-mid">
     <h2 className="tc near-black f1">Lets get in Touch!</h2>
-    <hr className="mw4 center bn bg-blue" style="height: 5px" />
+    <hr className="mw4 center bn bg-blue" style={{height: '5px' }} />
 
     <p className="mw7 center b near-black lh-copy f5 tc">
       Contact a teammate to boost your sales and fire up your next project.
