@@ -36,10 +36,8 @@ export default function Home() {
         </nav>
       </div>
     </header>
-    <header className="near-black dt vh-100 w-100 bg-light-gray cover logo bg-center">
+    <header className="near-black dt vh-100 w-100 mt bg-light-gray cover logo bg-center">
       <div className="dtc v-mid tc w-100">
-        <h1 className="f1 lh-solid mw8 center tc b mt6 ph5-ns">Consultant - Showcase your consulting agency/company!</h1>
-        <hr className="mw4 center bn bg-hot-pink" style={{height: '5px'}} />
         <p className="f3 mw8 center tc ph5">Tachyons Templates is a great way to get started building websites using the tachyons css framework. Simply download and launch your site within minutes.</p>
         <a href="#about" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-hot-pink ba b--hot-pink near-white page-scroll">Learn More</a>
       </div>
