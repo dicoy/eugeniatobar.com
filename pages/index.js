@@ -1,6 +1,19 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import React, { useState, useEffect, useRef } from "react";
 
 export default function Home() {
+  const prevScrollY = useRef(0);
+
+  const [atTheTop, setAtTheTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setAtTheTop(currentScrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingUp]);
+
   return (
     <>
     <Head>
