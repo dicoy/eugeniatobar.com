@@ -33,4 +33,4 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-s
 
 header.affix-top nav a { color: #111; }
 header.affix { background-color: white; padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
-header.affix nav a { color: #357edd; }
+header.affix nav a { color: #ff0099; }
