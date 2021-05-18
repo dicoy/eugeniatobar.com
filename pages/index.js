@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-
+    <>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -219,5 +219,6 @@ export default function Home() {
         <a href="http://deathtothestockphoto.com/" title="Header Photo Credit to DeathToStockPhoto" className="f6 dib ph2 link mid-gray dim">Header Photo Credit: <strong>DeathToStockPhoto</strong></a>
       </div>
     </footer>
+    </>
   )
 }
