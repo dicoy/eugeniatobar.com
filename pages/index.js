@@ -20,7 +20,9 @@ export default function Home() {
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head> 
-    <header id="mainNav" className="z-max cf fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l b bg-animate p-animate bb b--black-10 affix">
+    <header id="mainNav" className={
+      `z-max cf fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l b bg-animate p-animate bb b--black-10 ${atTheTop'affix': ''}`
+    }>
       <div className="w-80 center">
         <nav className="f5 b tracked fl w-50">
           <a className="link dim dib page-scroll" href="#page-top">Tachyons Templates</a>
