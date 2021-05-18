@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setAtTheTop(currentScrollY);
+      setAtTheTop(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -22,7 +22,7 @@ export default function Home() {
     </Head> 
     <header id="mainNav" className={
       `z-max cf fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l b bg-animate p-animate bb b--black-10 ${
-        atTheTop ? 'affix': ''
+        atTheTop > 10 ? 'affix': ''
       }`
     }>
       <div className="w-80 center">
