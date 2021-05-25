@@ -1,45 +1,19 @@
 import Head from 'next/head';
-import React, { useState, useEffect, useRef } from "react";
-
-export default function Home() {
-  const prevScrollY = useRef(0);
-
-  const [atTheTop, setAtTheTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setAtTheTop(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [atTheTop]);
-
-  return (
-    <>
+import components from '../components';
+import React from "react";
+const { Menu } = components;
+const Home = () => (
+  <>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head> 
-    <header id="mainNav" className={
-      `z-max cf fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l b bg-animate p-animate bb b--black-10 ${
-        atTheTop > 10 ? 'affix': ''
-      }`
-    }>
-      <div className="w-80 center">
-        <nav className="f5 b tracked fl w-50">
-          <a className="link dim dib page-scroll" href="#page-top">Tachyons Templates</a>
-        </nav>
-        <nav className="f6 tracked tr fl w-50">
-          <a className="link dim ph3 b dib page-scroll" href="#about">About</a>
-          <a className="link dim ph3 b dib page-scroll" href="#services">Services</a>
-          <a className="link dim ph3 b dib page-scroll" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <header className="near-black dt vh-100 w-100 mt bg-light-gray cover logo bg-center">
+    <Menu />
+    <header className="near-black dt vh-100 w-100 mt cover bg-center">
       <div className="dtc pt7 tc w-100">
-        <p className="f3 mw8 center tc ph5">Tachyons Templates is a great way to get started building websites using the tachyons css framework. Simply download and launch your site within minutes.</p>
-        <a href="#about" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-hot-pink ba b--hot-pink near-white page-scroll">Learn More</a>
+        <p className="f3 mw8 center tc ph5">Animate a prepararte para tomar coraje y conocer los limites de lo que podes empezar a cambiar del, de los fut, de lo que depara el... dame plata!!</p>
+        <a href="#about" className="f3 ph4 mr4 pv3 mb2 dib link no-underline br-pill dim bg-hot-pink ba b--hot-pink near-white page-scroll">Conocer mas</a>
+        <a href="#contact" className="f3 ph4 pv3 mb2 dib link no-underline br-pill dim bg-hot-pink ba b--hot-pink near-white page-scroll">Sacar Turno</a>
       </div>
     </header>
     <section id="about" className="vh-75 dt bg-hot-pink near-white w-100">
@@ -60,14 +34,14 @@ export default function Home() {
       <div className="cf w-100 w-80-ns center">
         <div className="fl w-100 w-25-ns tc mb4">
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
-            <line x1="12" y1="18" x2="12" y2="18" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></rect>
+            <line x1="12" y1="18" x2="12" y2="18" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></line>
           </svg>
           <h3 className="f3">Device Mockups</h3>
           <p className="black-50 ph3">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
         </div>
         <div className="fl w-100 w-25-ns tc mb4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
             <circle cx="12" cy="13" r="4"></circle>
           </svg>
@@ -76,16 +50,16 @@ export default function Home() {
         </div>
         <div className="fl w-100 w-25-ns tc mb4">
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-            <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-            <polyline points="2.32 6.16 12 11 21.68 6.16" fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
-            <line x1="12" y1="22.76" x2="12" y2="11" fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
-            <line x1="7" y1="3.5" x2="17" y2="8.5" fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+            <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" fill="none" stroke="#0f0f0f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+            <polyline points="2.32 6.16 12 11 21.68 6.16" fill="none" stroke="#0f0f0f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></polyline>
+            <line x1="12" y1="22.76" x2="12" y2="11" fill="none" stroke="#0f0f0f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></line>
+            <line x1="7" y1="3.5" x2="17" y2="8.5" fill="none" stroke="#0f0f0f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></line>
           </svg>
           <h3 className="f3">Free to Use</h3>
           <p className="black-50 ph3">As always, this theme is free to download and use for any purpose!</p>
         </div>
         <div className="fl w-100 w-25-ns tc mb4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
             <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
           </svg>
@@ -201,7 +175,7 @@ export default function Home() {
         </p>
         <div className="pv4 ph3 tc">
           <a className="link hot-pink hover-silver dib mh3 tc" href="mailto:feedback@tachyonstemplates.com?subject=feedback" title="email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
         <polyline points="22,6 12,13 2,6"></polyline>
     </svg>
@@ -209,7 +183,7 @@ export default function Home() {
             <span className="f5 b db">email us</span>
           </a>
           <a className="link hot-pink hover-silver dib mh3 tc" href="tel:123-456-7899" title="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
 
@@ -234,6 +208,6 @@ export default function Home() {
         <a href="http://deathtothestockphoto.com/" title="Header Photo Credit to DeathToStockPhoto" className="f6 dib ph2 link mid-gray dim">Header Photo Credit: <strong>DeathToStockPhoto</strong></a>
       </div>
     </footer>
-    </>
-  )
-}
+  </>
+);
+export default Home;
