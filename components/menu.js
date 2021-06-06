@@ -15,17 +15,23 @@ return (<header id="mainNav" className={
     atTheTop > 10 ? 'affix': ''
   }`
 }>
-  <div className="w-80 center flex items-center ">
-    <nav className="f5 b tracked fl w-20">
+  <div className="w-80 center flex items-center flex-column flex-row-ns">
+    <nav className="f5 b tracked fl w-90 w-20-ns">
       <a className="link dim dib page-scroll" href="#page-top">
         <img src="/logo.jpeg" className="dib w4 h3 br-100" />
       </a>
     </nav>
-    <nav className="f6 tracked tr fl w-80 pv3 pv4-ns">
+    <nav className={
+      `f6 tracked tr fl w-80 pv3 pv4-ns flex-column flex-row-ns  ${
+        atTheTop > 10 ? 'dn flex-ns': ''
+      }`
+    }>
       <a className="link dim ph3 b dib page-scroll" href="#about">Acerca de</a>
       <a className="link dim ph3 b dib page-scroll" href="#services">Servicios</a>
-      <a className="link dim ph3 b dib page-scroll" href="#services">Sacar turno</a>
       <a className="link dim ph3 b dib page-scroll" href="#contact">Chucherias misticas</a>
+      <a className="link dim ph3 b dib page-scroll" href="#services">Sacar turno</a>
+      <a className="link dim ph3 b dib page-scroll" href="#contact">Blog</a>
+      <a className="link dim ph3 b dib page-scroll" href="#contact">Promos</a>
     </nav>
   </div>
 </header>)
